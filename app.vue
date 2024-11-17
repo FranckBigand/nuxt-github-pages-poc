@@ -3,8 +3,9 @@
     <NuxtRouteAnnouncer />
     <header>
       <select v-model="language">
-        <option value="en">English</option>
-        <option value="fr">Français</option>
+        <option v-for="locale in locales" :value="locale.code">
+          {{ locale.name }}
+        </option>
       </select>
       <nav>
         <ul>
@@ -22,9 +23,9 @@
 </template>
 
 <script setup lang="ts">
-const language = defineModel<string>({ default: "en" });
+const { locale, locales, setLocale } = useI18n();
 
-const { setLocale } = useI18n();
+const language = ref(locale.value);
 
 watch(language, (newLanguage, _) => setLocale(newLanguage));
 </script>
