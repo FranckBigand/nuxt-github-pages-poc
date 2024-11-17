@@ -1,10 +1,20 @@
 <template>
   <main>
-    <h1>Page d'accueil</h1>
-    <p>Ceci est la page d'accueil</p>
+    <h1>{{ $t("homepage") }}</h1>
+    <p>{{ t("description") }}</p>
   </main>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { t } = useI18n({ useScope: "local" });
+</script>
 
 <style></style>
+
+<i18n lang="yaml">
+en:
+  description: This is the homepage
+
+fr:
+  description: Ceci est la page d'accueil
+</i18n>
