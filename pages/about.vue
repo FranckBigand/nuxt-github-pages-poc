@@ -11,6 +11,7 @@
     <ul>
       <li>{{ t("liFuncRouting") }}</li>
       <li>{{ t("liFuncI18n") }}</li>
+      <li>Local storage</li>
     </ul>
   </main>
 </template>
