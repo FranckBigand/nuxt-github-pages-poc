@@ -15,6 +15,11 @@
           <li>
             <NuxtLink to="/about">{{ $t("about") }}</NuxtLink>
           </li>
+          <li>
+            <NuxtLink to="/localStorage">
+              {{ $t("localStorageUsage") }}
+            </NuxtLink>
+          </li>
         </ul>
       </nav>
     </header>
