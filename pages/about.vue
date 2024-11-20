@@ -12,12 +12,17 @@
       <li>{{ t("liFuncRouting") }}</li>
       <li>{{ t("liFuncI18n") }}</li>
       <li>Local storage</li>
+      <li>{{ t("liFuncPageTitle") }}</li>
     </ul>
   </main>
 </template>
 
 <script lang="ts" setup>
 const { t } = useI18n({ useScope: "local" });
+
+useHeadSafe({
+  title: () => t("about"),
+});
 </script>
 
 <style></style>
@@ -33,6 +38,7 @@ en:
   pCurrentFunctionalities: "Currently tested functionalities:"
   liFuncRouting: Routing
   liFuncI18n: Internationalization (i18n)
+  liFuncPageTitle: Page title
 
 fr:
   pDescription: >-
@@ -45,4 +51,5 @@ fr:
   pCurrentFunctionalities: "Les fonctionnalités actuellement testées :"
   liFuncRouting: Navigation (routing)
   liFuncI18n: Internationalisation (i18n)
+  liFuncPageTitle: Titre de page
 </i18n>

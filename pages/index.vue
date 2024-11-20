@@ -7,6 +7,10 @@
 
 <script lang="ts" setup>
 const { t } = useI18n({ useScope: "local" });
+
+useHeadSafe({
+  title: () => t("homepage"),
+});
 </script>
 
 <style></style>

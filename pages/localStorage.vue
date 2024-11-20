@@ -19,12 +19,16 @@
 </template>
 
 <script lang="ts" setup>
-const { t } = useI18n();
+const { t } = useI18n({ useScope: "local" });
 
 const LOCAL_STORAGE_KEY = "localStorageValue";
 const localStorageValue = useLocalStorage(LOCAL_STORAGE_KEY, "");
 
 const formValue = ref("");
+
+useHeadSafe({
+  title: () => `Local storage | ${localStorageValue.value}`,
+});
 
 function updateLocalStorageValue() {
   localStorageValue.value = formValue.value;
