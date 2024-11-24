@@ -10,8 +10,9 @@
   <ul>
     <li>{{ t("liFuncRouting") }}</li>
     <li>{{ t("liFuncI18n") }}</li>
-    <li>Local storage</li>
+    <li>{{ t("liFuncLocalStorage") }}</li>
     <li>{{ t("liFuncPageTitle") }}</li>
+    <li>{{ t("liFuncDarkTheme") }}</li>
   </ul>
 </template>
 
@@ -37,7 +38,9 @@ en:
   pCurrentFunctionalities: "Currently tested functionalities:"
   liFuncRouting: Routing
   liFuncI18n: Internationalization (i18n)
+  liFuncLocalStorage: Local storage
   liFuncPageTitle: Page title
+  liFuncDarkTheme: Dark theme
 
 fr:
   pDescription: >-
@@ -50,5 +53,7 @@ fr:
   pCurrentFunctionalities: "Les fonctionnalités actuellement testées :"
   liFuncRouting: Navigation (routing)
   liFuncI18n: Internationalisation (i18n)
+  liFuncLocalStorage: Local storage
   liFuncPageTitle: Titre de page
+  liFuncDarkTheme: Thème sombre
 </i18n>
