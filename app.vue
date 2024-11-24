@@ -28,8 +28,8 @@ html.light {
 
 html.dark {
   color-scheme: dark;
-  --base: #212121;
-  --text: #cfcfcf;
+  --base: #252526;
+  --text: #cccccc;
 }
 
 body {
