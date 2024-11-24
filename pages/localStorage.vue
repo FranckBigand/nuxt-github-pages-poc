@@ -1,21 +1,19 @@
 <template>
-  <main>
-    <h1>{{ $t("localStorageUsage") }}</h1>
-    <p>{{ t("description") }}</p>
-    <p>{{ t("pLocalStorage", { value: localStorageValue }) }}</p>
-    <form @submit.prevent="updateLocalStorageValue">
-      <label for="localStorageNewValue">{{ t("lNewValue") }}</label>
-      <input
-        v-model="formValue"
-        id="localStorageNewValue"
-        name="value"
-        type="text"
-        maxlength="10"
-        required
-      />
-      <button type="submit">{{ t("update") }}</button>
-    </form>
-  </main>
+  <h1>{{ $t("localStorageUsage") }}</h1>
+  <p>{{ t("description") }}</p>
+  <p>{{ t("pLocalStorage", { value: localStorageValue }) }}</p>
+  <form @submit.prevent="updateLocalStorageValue">
+    <label for="localStorageNewValue">{{ t("lNewValue") }}</label>
+    <input
+      v-model="formValue"
+      id="localStorageNewValue"
+      name="value"
+      type="text"
+      maxlength="10"
+      required
+    />
+    <button type="submit">{{ t("update") }}</button>
+  </form>
 </template>
 
 <script lang="ts" setup>

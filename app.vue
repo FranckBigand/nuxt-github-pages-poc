@@ -6,7 +6,9 @@
       <ColorThemeSelector />
       <RouteLinks />
     </header>
-    <NuxtPage />
+    <main>
+      <NuxtPage />
+    </main>
   </div>
 </template>
 

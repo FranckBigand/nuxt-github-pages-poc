@@ -1,20 +1,18 @@
 <template>
-  <main>
-    <h1>{{ $t("about") }}</h1>
-    <p>
-      {{ t("pDescription") }}
-    </p>
-    <p>
-      {{ t("pGoal") }}
-    </p>
-    <p>{{ t("pCurrentFunctionalities") }}</p>
-    <ul>
-      <li>{{ t("liFuncRouting") }}</li>
-      <li>{{ t("liFuncI18n") }}</li>
-      <li>Local storage</li>
-      <li>{{ t("liFuncPageTitle") }}</li>
-    </ul>
-  </main>
+  <h1>{{ $t("about") }}</h1>
+  <p>
+    {{ t("pDescription") }}
+  </p>
+  <p>
+    {{ t("pGoal") }}
+  </p>
+  <p>{{ t("pCurrentFunctionalities") }}</p>
+  <ul>
+    <li>{{ t("liFuncRouting") }}</li>
+    <li>{{ t("liFuncI18n") }}</li>
+    <li>Local storage</li>
+    <li>{{ t("liFuncPageTitle") }}</li>
+  </ul>
 </template>
 
 <script lang="ts" setup>

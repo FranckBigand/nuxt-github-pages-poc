@@ -1,8 +1,6 @@
 <template>
-  <main>
-    <h1>{{ $t("homepage") }}</h1>
-    <p>{{ t("description") }}</p>
-  </main>
+  <h1>{{ $t("homepage") }}</h1>
+  <p>{{ t("description") }}</p>
 </template>
 
 <script lang="ts" setup>
