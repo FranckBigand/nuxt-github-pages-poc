@@ -1,6 +1,6 @@
 <template>
   <select v-model="language">
-    <option v-for="locale in locales" :value="locale.code">
+    <option v-for="locale in locales" :key="locale.code" :value="locale.code">
       {{ locale.name }}
     </option>
   </select>

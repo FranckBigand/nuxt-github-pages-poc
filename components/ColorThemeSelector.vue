@@ -1,6 +1,10 @@
 <template>
   <select v-model="colorMode">
-    <option v-for="colorOption in colorOptions" :value="colorOption.value">
+    <option
+      v-for="colorOption in colorOptions"
+      :key="colorOption.value"
+      :value="colorOption.value"
+    >
       {{ t(colorOption.nameKey) }}
     </option>
   </select>
