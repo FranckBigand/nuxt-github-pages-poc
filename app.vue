@@ -2,35 +2,36 @@
   <div>
     <NuxtRouteAnnouncer />
     <header>
-      <select v-model="language">
-        <option v-for="locale in locales" :value="locale.code">
-          {{ locale.name }}
-        </option>
-      </select>
-      <nav>
-        <ul>
-          <li>
-            <NuxtLink to="/">{{ $t("homepage") }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/about">{{ $t("about") }}</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/localStorage">
-              {{ $t("localStorageUsage") }}
-            </NuxtLink>
-          </li>
-        </ul>
-      </nav>
+      <LocaleSelector />
+      <ColorThemeSelector />
+      <RouteLinks />
     </header>
     <NuxtPage />
   </div>
 </template>
 
-<script setup lang="ts">
-const { locale, locales, setLocale } = useI18n();
+<style lang="css">
+:root {
+  --base: white;
+  --text: #212121;
+}
 
-const language = ref(locale.value);
+html {
+  color-scheme: light dark;
+}
 
-watch(language, (newLanguage, _) => setLocale(newLanguage));
-</script>
+html.light {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+  --base: #212121;
+  --text: #cfcfcf;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--base);
+}
+</style>

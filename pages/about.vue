@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>{{ t("about") }}</h1>
+    <h1>{{ $t("about") }}</h1>
     <p>
       {{ t("pDescription") }}
     </p>
@@ -19,9 +19,10 @@
 
 <script lang="ts" setup>
 const { t } = useI18n({ useScope: "local" });
+const { t: $t } = useI18n({ useScope: "global" });
 
 useHeadSafe({
-  title: () => t("about"),
+  title: () => $t("about"),
 });
 </script>
 
