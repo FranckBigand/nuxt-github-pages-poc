@@ -35,5 +35,7 @@ html.dark {
 body {
   color: var(--text);
   background-color: var(--base);
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 </style>
