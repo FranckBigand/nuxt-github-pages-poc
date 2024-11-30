@@ -12,6 +12,9 @@
           {{ $t("localStorageUsage") }}
         </NuxtLink>
       </li>
+      <li>
+        <NuxtLink to="/externalService">{{ $t("externalService") }}</NuxtLink>
+      </li>
     </ul>
   </nav>
 </template>
