@@ -36,6 +36,7 @@ body {
   color: var(--text);
   background-color: var(--base);
 
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 </style>
