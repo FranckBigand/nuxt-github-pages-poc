@@ -13,6 +13,7 @@
     <li>{{ t("liFuncLocalStorage") }}</li>
     <li>{{ t("liFuncPageTitle") }}</li>
     <li>{{ t("liFuncDarkTheme") }}</li>
+    <li>{{ t("liFuncExternalServiceCall") }}</li>
   </ul>
 </template>
 
@@ -41,6 +42,7 @@ en:
   liFuncLocalStorage: Local storage
   liFuncPageTitle: Page title
   liFuncDarkTheme: Dark theme
+  liFuncExternalServiceCall: External service call
 
 fr:
   pDescription: >-
@@ -56,4 +58,5 @@ fr:
   liFuncLocalStorage: Local storage
   liFuncPageTitle: Titre de page
   liFuncDarkTheme: Thème sombre
+  liFuncExternalServiceCall: Appel à un service externe
 </i18n>
